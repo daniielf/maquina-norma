@@ -1,0 +1,4 @@
+Trabalho Teoria da Computação UVV - 2017
+Daniel de Freitas Gonçalves
+
+www.github.com/daniielf/maquina-norma
