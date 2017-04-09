@@ -1,26 +1,28 @@
-OS VALORES INICIAS DE A,B,C,D DEVEM SER DIGITADOS NO ARQUIVO "NORMA.HTML"
+OS VALORES INICIAS DE A,B,C,D DEVEM SER DIGITADOS NO ARQUIVO "norma-ie"/"norma-chrome".
 
-COPIE O CONTEUDO DO ARQUIVO INDICADO ABAIXO PARA O ARQUIVO "entrada.txt"
+ABRA O ARQUIVO HTML (norma-ie para Internet Explorer ou norma-chrome para Google Chrome).
+SELECIONE O ARQUIVO DA OPERACAO DESEJADA DE ACORDO COM A DESCRICAO ABAIXO:
 
-Arquiv : soma 1
+Arquiv : 'soma 1'
 Desc : A = A + B  (com B Zerado)
 
-Arquivo: soma 2
+Arquivo: 'soma 2'
 Desc:  C = A + B (A e B sao zerados)
 
-Arquivo: soma 3
+Arquivo: 'soma 3'
 Desc: A = A + B (usando C; B mantem seu valor)
 
-Arquivo: mult 1
+Arquivo: 'mult 1'
 Desc: A = A*B (usando C e D; B mantem seu valor, C e D = 0)
 
-Arquivo mult 2
+Arquivo: 'mult 2'
 Desc: D = A*B (usando C; A e B zerado, C tem vestigio)
 
-Arquivo fatorial
+Arquivo: 'fatorial' (VALORES DE ENTRADA DEVEM SER B,C,D = 0)
 Desc: A = A! (usando B,C,D como auxiliares)
-(VALORES DE ENTRADA DEVEM SER B,C,D = 0)
 
 
-OBS1: EXECUTANDO NO CHORME SO SERAO EXIBIDOS OS VALORES DOS REGISTROS NO CONSOLE,
-NO INTERNET EXPLORER SERÁ GERADO UM ARQUIVO OUTPUT.TXT NA AREA DE TRABALHO.
+
+OBS1: APENAS SERA EXIBIDO O ARQUIVO DE SAIDA ('output.txt') CASO SEJA EXECUTADO PELO 
+Internet Explorer.
+O ARQUIVO SERA GERADO NO DESKTOP COMO PADRAO.

@@ -1,4 +1,3 @@
-<< RESULTADO  A = A+B , B = 0  >> <<NAO COPIAR ESSA LINHA>>
 {
     "entrada": [
         {
