@@ -1,0 +1,137 @@
+<< A = A! , B = 0 , C = 0 , D = 0 >> <<NAO COPIAR ESSA LINHA>>
+{
+    "entrada": [
+        {
+            "op":"ZERO",
+            "var":"A",
+            "dest_true":"4",
+            "dest_false" :"1"
+        },
+        {
+            "op":"ADD",
+            "var":"B",
+            "dest_true":"2",
+            "dest_false" :"2"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"3",
+            "dest_false" :"3"
+        },
+        {
+            "op":"SUB",
+            "var":"A",
+            "dest_true":"0",
+            "dest_false" :"0"
+        },
+        {
+            "op":"ZERO",
+            "var":"C",
+            "dest_true":"7",
+            "dest_false" :"5"
+        },
+        {
+            "op":"ADD",
+            "var":"A",
+            "dest_true":"6",
+            "dest_false" :"6"
+        },
+        {
+            "op":"SUB",
+            "var":"C",
+            "dest_true":"4",
+            "dest_false" :"4"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"8",
+            "dest_false" :"8"
+        },
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"1000",
+            "dest_false" :"9"
+        },
+        {
+            "op":"ZERO",
+            "var":"A",
+            "dest_true":"12",
+            "dest_false" :"10"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"11",
+            "dest_false" :"11"
+        },
+        {
+            "op":"SUB",
+            "var":"A",
+            "dest_true":"9",
+            "dest_false" :"9"
+        },
+        {
+            "op":"ZERO",
+            "var":"C",
+            "dest_true":"21",
+            "dest_false" :"13"
+        },
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"17",
+            "dest_false" :"14"
+        },
+        {
+            "op":"ADD",
+            "var":"A",
+            "dest_true":"15",
+            "dest_false" :"15"
+        },
+        {
+            "op":"ADD",
+            "var":"D",
+            "dest_true":"16",
+            "dest_false" :"16"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"13",
+            "dest_false" :"13"
+        },
+        {
+            "op":"ZERO",
+            "var":"D",
+            "dest_true":"20",
+            "dest_false" :"18"
+        },
+        {
+            "op":"ADD",
+            "var":"B",
+            "dest_true":"19",
+            "dest_false" :"19"
+        },
+        {
+            "op":"SUB",
+            "var":"D",
+            "dest_true":"17",
+            "dest_false" :"17"
+        },
+        {
+            "op":"SUB",
+            "var":"C",
+            "dest_true":"12",
+            "dest_false" :"12"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"8",
+            "dest_false" :"8"
+        }
+    ]
+}

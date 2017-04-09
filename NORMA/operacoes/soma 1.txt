@@ -1,0 +1,23 @@
+<< RESULTADO  A = A+B , B = 0  >> <<NAO COPIAR ESSA LINHA>>
+{
+    "entrada": [
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"100",
+            "dest_false" :"1"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"2",
+            "dest_false" :"2"
+        },
+        {
+            "op":"ADD",
+            "var":"A",
+            "dest_true":"0",
+            "dest_false" :"0"
+        }
+    ]
+}

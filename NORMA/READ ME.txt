@@ -1,0 +1,26 @@
+OS VALORES INICIAS DE A,B,C,D DEVEM SER DIGITADOS NO ARQUIVO "NORMA.HTML"
+
+COPIE O CONTEUDO DO ARQUIVO INDICADO ABAIXO PARA O ARQUIVO "entrada.txt"
+
+Arquiv : soma 1
+Desc : A = A + B  (com B Zerado)
+
+Arquivo: soma 2
+Desc:  C = A + B (A e B sao zerados)
+
+Arquivo: soma 3
+Desc: A = A + B (usando C; B mantem seu valor)
+
+Arquivo: mult 1
+Desc: A = A*B (usando C e D; B mantem seu valor, C e D = 0)
+
+Arquivo mult 2
+Desc: D = A*B (usando C; A e B zerado, C tem vestigio)
+
+Arquivo fatorial
+Desc: A = A! (usando B,C,D como auxiliares)
+(VALORES DE ENTRADA DEVEM SER B,C,D = 0)
+
+
+OBS1: EXECUTANDO NO CHORME SO SERAO EXIBIDOS OS VALORES DOS REGISTROS NO CONSOLE,
+NO INTERNET EXPLORER SERÁ GERADO UM ARQUIVO OUTPUT.TXT NA AREA DE TRABALHO.

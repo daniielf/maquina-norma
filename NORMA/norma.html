@@ -1,0 +1,152 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Selecione o arquivo de Entrada</h1>
+        <input type="file" id="openFile"/>
+        <br>
+        <br>
+        <input type="button" onClick="executeNorma()" value="Executar"/>
+        <br>
+        <pre id="fileContents"></pre>
+        
+        
+
+        <script type="text/javascript">
+            var inputTEXT;
+            
+            document.getElementById("openFile").addEventListener('change', function() {
+                var fr = new FileReader();
+                fr.onload = function() {
+                    console.log("arquivo aberto");
+                    inputTEXT = JSON.parse(this.result);
+
+                }
+                fr.readAsText(this.files[0]);
+                
+            })
+            
+            
+            
+            function executeNorma() {
+                var A = 4;
+                var B = 2;
+                var C = 0;
+                var D = 0;
+
+                var line = inputTEXT.entrada[0];
+                var dest = 0;
+                
+                var FSO  = new ActiveXObject("Scripting.FileSystemObject"); 
+                var output = FSO.CreateTextFile("output.txt", 8, true); 
+                
+                while ((dest <= inputTEXT.entrada.length - 1) && (dest <= 25)) {
+                    line = inputTEXT.entrada[dest];
+
+                    printMemoryState(A,B,C,D,dest,output);
+                    
+                    switch (line.var) {
+                            case "A":
+                                A = executeLine(line.op, A);
+                                if (checkDestin(line.op, A)) {
+                                    dest = line.dest_true;
+
+                                }
+                                else{
+                                    dest = line.dest_false;
+                                }
+                                break;
+                            
+                            case "B":
+                                B = executeLine(line.op, B);
+                                if (checkDestin(line.op, B)) {
+                                    dest = line.dest_true;
+                                }
+                                else{
+                                    dest = line.dest_false;
+                                }
+                                break;
+                            
+                            case "C":
+                                C= executeLine(line.op, C);
+                                if (checkDestin(line.op, C)) {
+                                    dest = line.dest_true;
+                                }
+                                else{
+                                    dest = line.dest_false;
+                                }
+                                break;
+                            
+                            case "D":
+                                 D = executeLine(line.op, D);
+                                if (checkDestin(line.op, D)) {
+                                    dest = line.dest_true;
+                                }
+                                else{
+                                    dest = line.dest_false;
+                                }
+                                break;
+                            
+                    }           
+                }
+                output.Close();
+            }
+            
+            function checkDestin(op,varString){
+                switch (op){
+                    case "ADD" :
+                            return true;
+
+                    case "SUB":
+                            return true;
+
+                    case "ZERO":   
+                            return ZERO(varString);                  
+                }
+            }
+            
+                  
+            
+            function executeLine(op, varString) {
+                switch (op){
+                    case "ADD" :
+                            varString = ADD(varString);
+                            return varString;
+
+                    case "SUB":
+                            varString = SUB(varString); 
+                            return varString;
+
+                    case "ZERO":   
+                           return varString;                  
+                }
+            }
+            
+            function printMemoryState(a,b,c,d,dest,output){
+                // Console usado para CHROME
+                console.log("((A:" + a + ", B:" + b + ", C:" + c + ", D:" + d + "), " + dest + ")");
+                // Arquivo apenas funciona no Internet Explorer
+                output.WriteLine("((A:" + a + ", B:" + b + ", C:" + c + ", D:" + d + "), " + dest + ")");  
+            }
+            
+            function ADD(x) {
+                return x + 1;
+            }
+            
+            function SUB(x) {
+                return x - 1;
+            }
+            
+            function ZERO(x) {
+                if (x == 0) {
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        
+        </script>
+    </body>
+</html>

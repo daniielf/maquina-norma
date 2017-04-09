@@ -1,0 +1,42 @@
+<<  A = 0 , B = 0 , C = A+B >> <<NAO COPIAR ESSA LINHA>>
+{
+    "entrada": [
+        {
+            "op":"ZERO",
+            "var":"A",
+            "dest_true":"3",
+            "dest_false" :"1"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"2",
+            "dest_false" :"2"
+        },
+        {
+            "op":"SUB",
+            "var":"A",
+            "dest_true":"0",
+            "dest_false" :"0"
+        },
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"1000",
+            "dest_false" :"4"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"5",
+            "dest_false" :"5"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"3",
+            "dest_false" :"3"
+        }
+        
+    ]
+}

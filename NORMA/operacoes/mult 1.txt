@@ -1,0 +1,78 @@
+<<  RESULTADO A = A*B , B = X, C = 0, D = 0  >> <<NAO COPIAR ESSA LINHA>>
+{
+    "entrada": [
+        {
+            "op":"ZERO",
+            "var":"A",
+            "dest_true":"3",
+            "dest_false" :"1"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"2",
+            "dest_false" :"2"
+        },
+        {
+            "op":"SUB",
+            "var":"A",
+            "dest_true":"0",
+            "dest_false" :"0"
+        },
+        {
+            "op":"ZERO",
+            "var":"C",
+            "dest_true":"1000",
+            "dest_false" :"4"
+        },
+        {
+            "op":"SUB",
+            "var":"C",
+            "dest_true":"5",
+            "dest_false" :"5"
+        },
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"9",
+            "dest_false" :"6"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"7",
+            "dest_false" :"7"
+        },
+        {
+            "op":"ADD",
+            "var":"A",
+            "dest_true":"8",
+            "dest_false" :"8"
+        },
+        {
+            "op":"ADD",
+            "var":"D",
+            "dest_true":"5",
+            "dest_false" :"5"
+        },
+        {
+            "op":"ZERO",
+            "var":"D",
+            "dest_true":"3",
+            "dest_false" :"10"
+        },
+        {
+            "op":"SUB",
+            "var":"D",
+            "dest_true":"11",
+            "dest_false" :"11"
+        },
+        {
+            "op":"ADD",
+            "var":"B",
+            "dest_true":"9",
+            "dest_false" :"9"
+        }
+        
+    ]
+}

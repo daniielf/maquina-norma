@@ -1,0 +1,59 @@
+<< RESULTADO A = 0 , B = 0, C = X, D = A*B  >> <<NAO COPIAR ESSA LINHA>>
+{
+    "entrada": [
+        {
+            "op":"ZERO",
+            "var":"B",
+            "dest_true":"1000",
+            "dest_false" :"1"
+        },
+        {
+            "op":"ZERO",
+            "var":"C",
+            "dest_true":"4",
+            "dest_false" :"2"
+        },
+        {
+            "op":"ADD",
+            "var":"A",
+            "dest_true":"3",
+            "dest_false" :"3"
+        },
+        {
+            "op":"SUB",
+            "var":"C",
+            "dest_true":"1",
+            "dest_false" :"1"
+        },
+        {
+            "op":"ZERO",
+            "var":"A",
+            "dest_true":"8",
+            "dest_false" :"5"
+        },
+        {
+            "op":"ADD",
+            "var":"C",
+            "dest_true":"6",
+            "dest_false" :"6"
+        },
+        {
+            "op":"ADD",
+            "var":"D",
+            "dest_true":"7",
+            "dest_false" :"7"
+        },
+        {
+            "op":"SUB",
+            "var":"A",
+            "dest_true":"4",
+            "dest_false" :"4"
+        },
+        {
+            "op":"SUB",
+            "var":"B",
+            "dest_true":"0",
+            "dest_false" :"0"
+        }
+    ]
+}
